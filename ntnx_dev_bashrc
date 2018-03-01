@@ -1,0 +1,15 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+ # User specific aliases and functions
+export TOP=/home/mukul-sharma/main
+export DISTCC_HOSTS="--randomize distcc-0/24 distcc-1/24"
+alias main="cd $TOP"
+alias cere="cd $TOP/cerebro"
+alias tags="ctags -R"
+alias vi="vim"
+export TERM="xterm-256color"
+alias review="git difftool"
