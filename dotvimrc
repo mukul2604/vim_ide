@@ -15,8 +15,9 @@ set expandtab
 
 " set higlighter
 set cursorline
+set colorcolumn=80
 hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
-hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+hi CursorColumn cterm=NONE ctermbg=black ctermfg=white guibg=black guifg=white
 nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
 augroup CursorLine
   au!
